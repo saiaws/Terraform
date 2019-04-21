@@ -12,7 +12,7 @@ to_port = 3306
 protocol =”tcp”
 cidr_block = [“{var.RDS_CIDR}”]
 }
-Egress
+egress
 {
 from_port =  0
 to_port = 0
