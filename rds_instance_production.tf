@@ -1,7 +1,6 @@
  resource “aws_db_instance” “prod”
 {
 Identifier = “${var.PROJECT_NAME}-prod-rds”
-# final_snapshot_identifier = “${var.PROJECT_NAME}-prod-rds-final-snapshot”
 allocated_storage = “${var.RDS_ALLOCATED_STORAGE}”
 storage_type = “gp2”
 engine = “${var.RDS_ENGINE}”
